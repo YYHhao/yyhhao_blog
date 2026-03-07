@@ -1,0 +1,98 @@
+/* ==========================================
+   Zensical-Chinese-Tutorial 导航层级增强样式
+   ========================================== */
+
+/* 一级目录：最顶层，如“笔记” */
+.md-nav--primary .md-nav__item--level1 > .md-nav__link {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--md-primary-fg-color, #518FC1);
+  border-left: 4px solid var(--md-primary-fg-color, #518FC1);
+  padding-left: 0.8rem;
+  margin: 0.3rem 0;
+  background: linear-gradient(to right, rgba(81, 143, 193, 0.05), transparent);
+}
+
+/* 二级目录：数学建模的同级，如“git学习”、“编码(encode)与解码(decode)”等 */
+.md-nav--primary .md-nav__list .md-nav__item:not(.md-nav__item--nested) > .md-nav__link,
+.md-nav--primary .md-nav__list .md-nav__item--nested > .md-nav__link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  border-left: 2px solid #8a8a8a;
+  padding-left: 1.2rem;
+  margin: 0.2rem 0;
+}
+
+/* 特别标识“数学建模”这类有子项的二级目录 */
+.md-nav--primary .md-nav__list .md-nav__item--nested > .md-nav__link {
+  position: relative;
+  font-weight: 650; /* 比同级无子项的稍粗 */
+  color: #2c5282; /* 深蓝色，区别于普通二级目录 */
+}
+
+/* 二级目录有子项的添加小箭头图标 */
+.md-nav--primary .md-nav__list .md-nav__item--nested > .md-nav__link::before {
+  content: "▶";
+  font-size: 0.7em;
+  margin-right: 0.5em;
+  color: var(--md-primary-fg-color, #518FC1);
+  transition: transform 0.2s ease;
+}
+
+/* 展开状态的小箭头旋转 */
+.md-nav--primary .md-nav__list .md-nav__item--nested.md-nav__item--active > .md-nav__link::before,
+.md-nav--primary .md-nav__list .md-nav__item--nested:focus-within > .md-nav__link::before,
+.md-nav--primary .md-nav__list .md-nav__item--nested:hover > .md-nav__link::before {
+  transform: rotate(90deg);
+}
+
+/* 三级目录：如"前言"、"优化模型"等 */
+.md-nav--primary .md-nav__list .md-nav__list .md-nav__link {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #555;
+  border-left: 1px dashed #aaa;
+  padding-left: 1.8rem;
+  margin: 0.15rem 0;
+  opacity: 0.9;
+}
+
+/* 四级目录：如"多目标规划"、"层次分析法"等 */
+.md-nav--primary .md-nav__list .md-nav__list .md-nav__list .md-nav__link {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #777;
+  border-left: 1px dotted #ccc;
+  padding-left: 2.4rem;
+  margin: 0.1rem 0;
+  opacity: 0.8;
+}
+
+/* 当前活动页面的目录项高亮 */
+.md-nav--primary .md-nav__link--active {
+  background-color: rgba(81, 143, 193, 0.1) !important;
+  color: var(--md-primary-fg-color, #518FC1) !important;
+  font-weight: 650 !important;
+}
+
+/* 悬停效果增强 */
+.md-nav--primary .md-nav__link:hover {
+  background-color: rgba(81, 143, 193, 0.05);
+  padding-left: calc(1.2rem + 2px); /* 悬停时增加额外缩进 */
+  transition: all 0.2s ease;
+}
+
+/* 针对您的具体示例，为不同类型的二级目录添加视觉提示 */
+/* 有子目录的二级目录（如"数学建模"） */
+.md-nav--primary .md-nav__list > .md-nav__item--nested {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 无子目录的二级目录（如"git学习"、"编码(encode)与解码(decode)"等） */
+.md-nav--primary .md-nav__list > .md-nav__item:not(.md-nav__item--nested) {
+  border-bottom: none;
+  margin-bottom: 0.3rem;
+}
