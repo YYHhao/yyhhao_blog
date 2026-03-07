@@ -71,12 +71,20 @@ git push时报错:[解决方法](https://blog.csdn.net/qq_43546721/article/detai
 fatal: unable to access 'https://github.com/YYHhao/YYHhao_blogs.git/': Failed to connect to github.com port 443 after 21159 ms: Could not connect to server
 ```
 # 新版 Zensical（[教程网站](https://wcowin.work/Zensical-Chinese-Tutorial)）
-**因为MkDocs for Material 已停止更新进入维护模式，Zensical 是官方推荐的新一代博客系统**
+**因为MkDocs for Material 已停止更新进入维护模式，Zensical 是官方推荐的新一代博客系统**   
+如下，提交后自动部署更新博客：   
+可以在提交前检查更改状态，使用以下命令查看您修改了哪些文件：
 ```
+git status
+```
+提交：
+```
+# 添加所有更改的文件
 git add .
-git commit -m 'message'
-git push -u origin main
-python -m mkdocs gh-deploy --force
+# 提交更改
+git commit -m '更新：发布了一篇新文章'
+# 推送到远程仓库，如果您之前已使用过 git push -u origin main，后续可以直接用 git push
+git push origin main
 ```
 
 
