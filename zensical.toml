@@ -155,6 +155,7 @@ nav = [
         { "双conda优先级问题" = "blog/bj/conda1.md" },
         { "HTML和XML" =  "blog/bj/html_xml.md"},
         { "JSON学习" =  "blog/bj/json.md"},
+        { "tmux使用" =  "blog/bj/tmux.md"},
     ] },
 ]
 
