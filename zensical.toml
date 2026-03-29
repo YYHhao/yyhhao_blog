@@ -39,6 +39,10 @@ nav = [
     { "python学习" = [
         { "基础" = [
             { "字典" = "blog/python学习/基础/字典.md" },
+            { "进、线、协程" = "blog/python学习/基础/线程进程协程.md" },
+            {"同步与异步" = "blog/python学习/基础/异步.md"},
+            {"闭包与装饰器" = "blog/python学习/基础/闭包与装饰器.md"},
+            {"GIL锁" = "blog/python学习/基础/gil.md"},
         ]},
         { "数据处理及可视化" = [
             { "matplotlib中文编码" = "blog/python学习/datapv/mydatapv.md" },
@@ -61,7 +65,6 @@ nav = [
         ]},
         { "爬虫学习" = [
             { "多线程、异步爬虫" = "blog/python学习/pachong/mypachong1.md" },
-            { "进、线、协程的概念" = "blog/python学习/pachong/mypachong2.md" },
         ]}
     ] },
 
@@ -86,7 +89,8 @@ nav = [
             { "决策树" = "blog/ml/分类算法/DT.md" },
             { "CART" = "blog/ml/分类算法/CART.md" },
             { "随机森林" = "blog/ml/分类算法/RF.md" },
-            { "GBDT" = "blog/ml/分类算法/GBDT.md" }
+            { "GBDT" = "blog/ml/分类算法/GBDT.md" },
+            {"XGBoost" = "blog/ml/分类算法/xgboost.md" } 
         ]},
         { "回归算法" = [
             { "前言" = "blog/ml/回归算法/regressionalg.md" },
@@ -125,6 +129,7 @@ nav = [
 
     { "Agent开发" = [
         { "前言" = "blog/agent/前言.md" },
+        
     ] },
 
     { "算法学习" = [
