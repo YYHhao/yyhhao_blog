@@ -129,7 +129,10 @@ nav = [
 
     { "Agent开发" = [
         { "前言" = "blog/agent/前言.md" },
-        
+        { "Prompt" = "blog/agent/prompt.md" },
+        { "Faiss" = "blog/agent/faiss.md" },
+        { "Milvus" = "blog/agent/milvus.md" },
+
     ] },
 
     { "算法学习" = [
