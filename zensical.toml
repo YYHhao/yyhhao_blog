@@ -136,6 +136,7 @@ nav = [
         { "向量存储(Vector stores)" = "blog/agent/vector_stores.md" },
         { "Faiss" = "blog/agent/faiss.md" },
         { "Milvus" = "blog/agent/milvus.md" },
+        { "SFT、RLHF、DPO的选择" = "blog/agent/sft.md" },
 
     ] },
 

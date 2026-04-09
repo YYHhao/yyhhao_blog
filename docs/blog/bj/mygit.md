@@ -86,8 +86,30 @@ git commit -m '更新：发布了一篇新文章'
 # 推送到远程仓库，如果您之前已使用过 git push -u origin main，后续可以直接用 git push
 git push origin main
 ```
+## git push 报错问题
+>fatal: unable to access 'https://github.com/YYHhao/yyhhao_blog.git/': Failed to connect to github.com port 443 after 21190 ms: Could not connect to server
 
+**方法一：取消代理设置**
 
+这是最常见的解决方法之一，通过在终端执行以下命令，可以取消 Git 的代理设置：
+```
+git config --global --unset http.proxy 
+git config --global --unset https.proxy
+```
+这样就可以清除 Git 的代理设置，让其直接连接网络进行操作。
+
+**方法二：设置系统代理**
+
+有时候取消代理设置仍然会出现报错，这时可以通过设置系统代理来解决。具体步骤如下：
+
+在代理服务器中，将端口设置为7890(比如设置clash中端口号)，在终端输入以下命令，设置 Git 使用本地代理：
+```
+git config --global http.proxy http://127.0.0.1:7890
+```
+设置完成后，可以通过以下命令检验是否设置成功：
+```
+git config --global -l
+```
 
 [mkdocs参考：https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions)
 [vscode本地文件传送GitHub](https://blog.csdn.net/Libetaion/article/details/126556860)          
