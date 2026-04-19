@@ -125,6 +125,11 @@ nav = [
 
     { "NLP" = [
         { "前言" = "blog/nlp/前言.md" },
+        { "数据增强" = "blog/nlp/数据增强.md" },
+        { "bad case" = "blog/nlp/badcase.md" },
+        { "FastText" = "blog/nlp/fasttext.md" },
+        { "BERT及其变体" = "blog/nlp/bert.md" },
+       
     ] },
 
     { "Agent开发" = [
