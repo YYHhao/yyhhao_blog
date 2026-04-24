@@ -38,6 +38,7 @@ nav = [
     { "主页" = "index.md" },
     { "python学习" = [
         { "基础" = [
+            { "数组、链表、栈、队列、哈希表" = "blog/python学习/基础/数据结构.md" },
             { "字典" = "blog/python学习/基础/字典.md" },
             { "进、线、协程" = "blog/python学习/基础/线程进程协程.md" },
             {"同步与异步" = "blog/python学习/基础/异步.md"},
@@ -104,6 +105,7 @@ nav = [
         { "神经网络权重初始化0问题" = "blog/dl/初始化.md" },
         { "super(X,self).__init__()" = "blog/dl/super.md" },
         { "LeNet-5卷积神经网络" = "blog/dl/lenet5.md" },
+        { "双向长短期记忆网络BiLSTM" = "blog/dl/bilstm.md" },
     ] },
 
     { "CV" = [
@@ -129,6 +131,7 @@ nav = [
         { "bad case" = "blog/nlp/badcase.md" },
         { "FastText" = "blog/nlp/fasttext.md" },
         { "BERT及其变体" = "blog/nlp/bert.md" },
+        { "多分类评估F1-score" = "blog/nlp/宏F1与微F1.md" },
        
     ] },
 
@@ -139,6 +142,7 @@ nav = [
         { "Memory" = "blog/agent/memory.md" },
         { "文档加载器" = "blog/agent/文档加载器.md" },
         { "向量存储(Vector stores)" = "blog/agent/vector_stores.md" },
+        { "Redis" = "blog/agent/redis.md" },
         { "Faiss" = "blog/agent/faiss.md" },
         { "Milvus" = "blog/agent/milvus.md" },
         { "SFT、RLHF、DPO的选择" = "blog/agent/sft.md" },
