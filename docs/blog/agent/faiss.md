@@ -91,6 +91,7 @@ def build_prompt(query: str, matched_chunks: list) -> str:
 """
 ```
 **构建 prompt 时的实用技巧：**  
+
 项目	|建议
 ---|---
 上下文数量|	通常建议 Top 3～5 段，超过影响 token 上限
