@@ -301,7 +301,7 @@ pagination_url_format = "page/{page}"         # 分页URL格式
 # Markdown 扩展配置 [Markdown Extensions]
 # ==========================================
 
-# ===== 官方默认配置（严格按照 Zensical 官方文档）=====
+# ===== Python Markdown 扩展 =====
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]
@@ -309,25 +309,36 @@ pagination_url_format = "page/{page}"         # 分页URL格式
 [project.markdown_extensions.footnotes]
 [project.markdown_extensions.md_in_html]
 [project.markdown_extensions.toc]
+permalink = true
 toc_depth = 3
-permalink = true  # 固定标题位置为当前位置，显示 # 符号
-[project.markdown_extensions.pymdownx.arithmatex]
+
+# ===== PyMdown Extensions =====
+[project.markdown_extensions."pymdownx.arithmatex"]
 generic = true
-[project.markdown_extensions.pymdownx.betterem]
-smart_enable = "false"
-[project.markdown_extensions.pymdownx.caret]
-[project.markdown_extensions.pymdownx.details]
-[project.markdown_extensions.pymdownx.emoji]
-emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions."pymdownx.betterem"]
+smart_enable = "all"
+
+[project.markdown_extensions."pymdownx.caret"]
+[project.markdown_extensions."pymdownx.mark"]
+[project.markdown_extensions."pymdownx.tilde"]
+[project.markdown_extensions."pymdownx.details"]
+[project.markdown_extensions."pymdownx.keys"]
+[project.markdown_extensions."pymdownx.smartsymbols"]
+
+[project.markdown_extensions."pymdownx.emoji"]
 emoji_index = "zensical.extensions.emoji.twemoji"
-[project.markdown_extensions.pymdownx.highlight]
-[project.markdown_extensions.pymdownx.inlinehilite]
-[project.markdown_extensions.pymdownx.keys]
-[project.markdown_extensions.pymdownx.mark]
-[project.markdown_extensions.pymdownx.smartsymbols]
-[project.markdown_extensions.pymdownx.superfences]
-[project.markdown_extensions.pymdownx.tabbed]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions."pymdownx.highlight"]
+anchor_linenums = true
+
+[project.markdown_extensions."pymdownx.inlinehilite"]
+
+[project.markdown_extensions."pymdownx.superfences"]
+
+[project.markdown_extensions."pymdownx.tabbed"]
 alternate_style = true
-[project.markdown_extensions.pymdownx.tasklist]
+
+[project.markdown_extensions."pymdownx.tasklist"]
 custom_checkbox = true
-[project.markdown_extensions.pymdownx.tilde]
