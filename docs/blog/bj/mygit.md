@@ -110,6 +110,13 @@ git config --global http.proxy http://127.0.0.1:7890
 ```
 git config --global -l
 ```
+## 利用agent更新远程git仓库
+实习阶段团队使用的gitee共同开发，因为现在都是用大模型协助开发，可以直接让大模型协助提交git。只需要如下提示词：
+```
+把本地修改做一个暂存，拉取最新的仓库下来，恢复暂存推送到原来的远程仓库
+```
+
+
 
 [mkdocs参考：https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions)
 [vscode本地文件传送GitHub](https://blog.csdn.net/Libetaion/article/details/126556860)          
