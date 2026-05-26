@@ -18,8 +18,8 @@
 .md-nav--primary .md-nav__list .md-nav__item--nested > .md-nav__link {
   font-weight: 600;
   font-size: 0.9rem;
-  color: #333;
-  border-left: 2px solid #8a8a8a;
+  color: inherit;
+  border-left: 2px solid var(--md-default-fg-color--lighter);
   padding-left: 1.2rem;
   margin: 0.2rem 0;
 }
@@ -28,45 +28,30 @@
 .md-nav--primary .md-nav__list .md-nav__item--nested > .md-nav__link {
   position: relative;
   font-weight: 650; /* 比同级无子项的稍粗 */
-  color: #2c5282; /* 深蓝色，区别于普通二级目录 */
+  color: inherit; /* 继承默认色，会自适应日/夜间模式 */
 }
 
-/* 二级目录有子项的添加小箭头图标 */
-.md-nav--primary .md-nav__list .md-nav__item--nested > .md-nav__link::before {
-  content: "▶";
-  font-size: 0.7em;
-  margin-right: 0.5em;
-  color: var(--md-primary-fg-color, #518FC1);
-  transition: transform 0.2s ease;
-}
-
-/* 展开状态的小箭头旋转 */
-.md-nav--primary .md-nav__list .md-nav__item--nested.md-nav__item--active > .md-nav__link::before,
-.md-nav--primary .md-nav__list .md-nav__item--nested:focus-within > .md-nav__link::before,
-.md-nav--primary .md-nav__list .md-nav__item--nested:hover > .md-nav__link::before {
-  transform: rotate(90deg);
-}
+/* 移除自定义箭头，使用主题自带的展开/折叠控件 */
+/* （已注释掉自定义内容，以免覆盖主题自带功能） */
 
 /* 三级目录：如"前言"、"优化模型"等 */
 .md-nav--primary .md-nav__list .md-nav__list .md-nav__link {
   font-weight: 500;
   font-size: 0.85rem;
-  color: #555;
-  border-left: 1px dashed #aaa;
+  color: inherit;
+  border-left: 1px dashed var(--md-default-fg-color--lighter);
   padding-left: 1.8rem;
   margin: 0.15rem 0;
-  opacity: 0.9;
 }
 
 /* 四级目录：如"多目标规划"、"层次分析法"等 */
 .md-nav--primary .md-nav__list .md-nav__list .md-nav__list .md-nav__link {
   font-weight: 400;
   font-size: 0.8rem;
-  color: #777;
-  border-left: 1px dotted #ccc;
+  color: inherit;
+  border-left: 1px dotted var(--md-default-fg-color--lighter);
   padding-left: 2.4rem;
   margin: 0.1rem 0;
-  opacity: 0.8;
 }
 
 /* 当前活动页面的目录项高亮 */
@@ -86,8 +71,7 @@
 /* 针对您的具体示例，为不同类型的二级目录添加视觉提示 */
 /* 有子目录的二级目录（如"数学建模"） */
 .md-nav--primary .md-nav__list > .md-nav__item--nested {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.3rem;
+  border-bottom: none;
   margin-bottom: 0.5rem;
 }
 
