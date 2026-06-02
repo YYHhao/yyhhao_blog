@@ -171,6 +171,7 @@ nav = [
         { "HTML和XML" =  "blog/bj/html_xml.md"},
         { "JSON学习" =  "blog/bj/json.md"},
         { "tmux使用" =  "blog/bj/tmux.md"},
+        { "vscode无法连接服务器" =  "blog/bj/vscode远程服务器.md"},
         { "数学建模" = [
             { "前言" = "blog/bj/数学建模/前言.md" },
             { "多目标规划" = "blog/bj/数学建模/优化模型/多目标规划.md" },
