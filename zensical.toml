@@ -146,13 +146,14 @@ nav = [
         { "Faiss" = "blog/agent/faiss.md" },
         { "Milvus" = "blog/agent/milvus.md" },
         { "SFT、RLHF、DPO的选择" = "blog/agent/sft.md" },
-
+        { "FastAPI" = "blog/agent/fastapi.md" },
     ] },
 
     { "算法学习" = [
         { "EM算法" = "blog/算法学习/EM算法.md" },
         { "欧几里得算法、中国剩余定理" = "blog/算法学习/mylearning1.md" },
         { "模拟退火算法" = "blog/算法学习/SA.md" },
+        { "滴滴笔试编程" = "blog/算法学习/滴滴笔试编程.md" },
     ] },
 
     { "论文学习" = [

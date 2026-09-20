@@ -39,7 +39,7 @@ apt install sudo -y
 ## tmux简单命令
 功能|命令
 ---|---   
-新建|tumx new -s yyh 
+新建|tmux new -s yyh 
 退出|先按Ctrl+b,再按d（或者再按：输入detach）
 查看|tmux ls
 重新进入|tmux attach -t yyh
