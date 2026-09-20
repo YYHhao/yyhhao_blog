@@ -318,6 +318,9 @@ toc_depth = 3
 [project.markdown_extensions."pymdownx.arithmatex"]
 generic = true
 
+# 在 Arithmatex 后加载：兼容无空行列表及句子中的 $$...$$。
+[project.markdown_extensions.blog_markdown]
+
 [project.markdown_extensions."pymdownx.betterem"]
 smart_enable = "all"
 
