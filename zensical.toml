@@ -145,6 +145,7 @@ nav = [
         { "Redis" = "blog/agent/redis.md" },
         { "Faiss" = "blog/agent/faiss.md" },
         { "Milvus" = "blog/agent/milvus.md" },
+        { "大模型微调" = "blog/agent/大模型微调.md" },
         { "SFT、RLHF、DPO的选择" = "blog/agent/sft.md" },
         { "FastAPI" = "blog/agent/fastapi.md" },
     ] },
